@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     }
 
     printf("Enter a message for the server: ");
-    int write,read;
+    
     bzero(buffer,256);
     fgets(buffer,sizeof(buffer),stdin);
     n = write(sockfd,buffer,strlen(buffer));
