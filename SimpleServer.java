@@ -8,7 +8,7 @@ class SimpleServer extends Thread
 
    public SimpleServer(int port) throws IOException
    {
-      serverSocket = new ServerSocket(port);
+      serverSocket = new ServerSocket(1024);
       serverSocket.setSoTimeout(10000);
    }
 
@@ -47,7 +47,7 @@ class SimpleServer extends Thread
         int port = Integer.parseInt(args[0]);
         try
         {
-            Thread t = new SimpleServer(port);
+            Thread t = new SimpleServer(1024);
             t.start();
         }
 
