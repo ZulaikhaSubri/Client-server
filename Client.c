@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     struct sockaddr_in serv_addr;
     struct hostent *server;
     int n;
-    char buffer[256];
+    char buffer[1024];
 
     if (argc < 3)
     {
